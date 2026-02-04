@@ -1,0 +1,21 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+using namespace std;
+
+int main() 
+{
+	int i, dim;
+	cout<<"Informe a dimensao do vetor : ";
+	cin>>dim;
+	
+	int v[dim];
+	srand (time(NULL));
+	for(i= 0 ; i <dim ;i++){
+		v[i] = rand()%200;//faixa de 0 a 199	
+	}
+	cout << endl;
+	for(i = 0 ; i < dim; i++){
+		cout << "v[" << i << "] = " <<v[i]<< endl;
+	}
+ }
